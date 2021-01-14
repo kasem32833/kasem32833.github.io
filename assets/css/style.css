@@ -27,12 +27,25 @@ a:active{
 
 }
 a:visited{
-    color: yellow;
+   
 
 }
 .container{
     width: 80%;
     margin: auto; 
+}
+.button{
+    background-color:#333;
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.button:hover{
+    background-color:red;
+    color: #fff;
+ 
+  
 }
 .box-1{
     background-color:#333;
@@ -87,7 +100,66 @@ a:visited{
 
 
 }
-/* Ordered list  */
+.my-form{
+    padding: 20px;
+    
+
+}
+.form-group{
+    padding-bottom: 15px;
+}
+.my-form label{
+    display: block;
+}
+.my-form input[type="text"], .my-form textarea{
+   padding: 8px;
+   width: 30%   
+}
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+
+
+
+}
+.clr{
+    clear:both;
+}
+
+
+/* Usees of  ID */
+#main-block{
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+#side-bar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;    
+
+}
+/* positioning */
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+}
+.p-box h1{
+    
+}
+
+
+
+
 
 
 
