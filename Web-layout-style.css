@@ -47,7 +47,7 @@ body{
     
 }
 #showcase{
-    background-image: url("../images/flower.jpg");
+    background-image: url("../img/flower.jpg");
     background-position: center right;
     min-height: 300px;
     margin-bottom: 30px;
