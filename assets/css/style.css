@@ -12,36 +12,93 @@ html{
 }
 
 body{
-    background: #f4f4f4;
-    color: #555;
+
     font: normal 16px Arial, Helvetica, sans-sarif;
     line-height: 1.6em;
 }
-a{
-    text-decoration: none;
-    color: #000;
-}
-a:hover{
-    color:red;
-}
-a:active{
-    color:green;
-
-}
-a:visited{
-   
+.section-bg{
+    background: #333;
+    height: 100vh;
+    color: #fff;
 
 }
 .container{
     width: 80%;
-    margin: auto; 
+    margin: auto;
 }
-.button{
-    background-color:#333;
-    padding: 10px 15px;
-    border: none;
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.logo-area h1 span{
+ color: #E63946;
+}
+.menu-area ul{
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu-area ul li{
+        display: inline-block; 
+}
+.menu-area ul li a{
+        color: #fff;
+        padding-right: 15px;
+        float: right;
+        text-decoration: none;
+}
+
+
+.menu-area ul li:first-child{
+  color: red;
+
+}
+.menu-area ul li a:hover{
+        color: #E63946;
+
+}
+.banner-area{
     color: #fff;
+}
+.section-padding{
+    padding: 200px 0;
+}
+.banner-area{
+    display: flex;
+    justify-content: space-around;
+}
+.banner-text{
+    text-align: center;
+}
+.banner-text h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.banner-text h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+
+}
+.banner-text p{
+font-weight: 600;
+
+}
+
+.boxed-btn{
+    background: #E63946;
+    color: #fff;
+    display:inline-block;
+    margin-top: 30px;
+    padding: 10px 40px;
+    border: none;   
+    border-radius: 50px;
     cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
 }
 .button:hover{
     background-color:red;
@@ -57,45 +114,8 @@ a:visited{
     color: #fff;
     padding: 20px 0;
 }
-.banner h1{
-    margin-bottom: 20px;
-}
-#navbar{
-    background: #333;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    float: right;  
-
-}
 
 
-#navbar ul{
-
-    list-style: none;
-
-}
-#navbar ul li{
-    display: inline-block;
-    
-}
-#navbar ul li a{
-    color: #fff;
-    padding-right: 15px;
-    float: right;
-}
-
-#html{
-    margin: 30px 0;
-    text-align: center;
-}
-#html h1{
-    padding: 50px 0;
-}
-#html h3 span{
-    color: red;
-   
-}
 .heading-box,.paragraph-box{
  border: 1px dotted #555;
  margin: 30px 0;
@@ -247,7 +267,7 @@ a:visited{
 }
 
 .my-list li:first-child{
-    background: red;
+    background: #e65f78 
 
 }
 
