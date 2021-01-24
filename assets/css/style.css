@@ -1,5 +1,6 @@
 
-/* This is CSS crash course */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&display=swap');
+
  
 *{ 
     margin:0;
@@ -13,7 +14,7 @@ html{
 
 body{
 
-    font: normal 16px Arial, Helvetica, sans-sarif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6em;
 }
 .section-bg{
@@ -110,6 +111,9 @@ font-weight: 600;
 #about{
     display: flex;
     justify-content: space-between;
+    padding-top: 50px;
+  
+    
    
 }
 .about-image{
