@@ -28,9 +28,12 @@ body{
     margin: auto;
 }
 .header-container{
+   
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
+    
+   
 }
 .logo-area h1 span{
  color: #E63946;
@@ -63,9 +66,7 @@ body{
 .banner-area{
     color: #fff;
 }
-.section-padding{
-    padding: 200px 0;
-}
+
 .banner-area{
     display: flex;
     justify-content: space-around;
@@ -136,9 +137,6 @@ font-weight: 600;
 .about-text h1 span{
  color: #E63946;
 }
-
----------------------------------------------
-
 
 .heading-box,.paragraph-box{
  border: 1px dotted #555;
@@ -307,6 +305,22 @@ font-weight: 600;
 
 .my-list li:nth-child(even){
     background: gray;
+
+}
+.main-footer{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+
+}
+.pdt-80{
+    padding-top: 80px;
+}
+
+.pdt-200{
+    padding-top: 200px;
 }
 
 
