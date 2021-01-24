@@ -99,21 +99,41 @@ font-weight: 600;
     cursor: pointer;
     text-decoration: none;
     font-weight: 700;
+    transition: .3s;
 }
-.button:hover{
-    background-color:red;
-    color: #fff;
+.boxed-btn:hover{
+    background-color:#fff;
+    color: #333;
  
   
 }
-.banner{
-    position: fixed;
-    width: 100%;
-    background: #333;
-    text-align: center;
-    color: #fff;
-    padding: 20px 0;
+#about{
+    display: flex;
+    justify-content: space-between;
+   
 }
+.about-image{
+    flex-basis: 40%;
+    height: auto;
+    background-image: url(../img/road.jfif);
+    background-size:cover;
+    background-position: center;
+    background-color: #fff;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+}
+.about-text{
+    flex-basis: 50%;
+    line-height: 1.8em;
+}
+.about-text h1,h2{
+    margin-bottom: 15px;
+}
+.about-text h1 span{
+ color: #E63946;
+}
+
+---------------------------------------------
 
 
 .heading-box,.paragraph-box{
