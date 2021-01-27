@@ -18,10 +18,28 @@ body{
     line-height: 1.6em;
 }
 .section-bg{
-    background: #333;
+    background-image: url(../img/header-bg.jpg);
     height: 100vh;
     color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
 
+}
+.section-bg:after{
+    background: -moz-linear-gradient(-45deg,  rgba(46,34,158,0.93) 0%, rgba(169,84,199,0.84) 100%);
+    background: -webkit-linear-gradient(-45deg,  rgba(46,34,158,0.93) 0%,rgba(169,84,199,0.84) 100%);
+    background: linear-gradient(135deg,  rgba(46,34,158,0.93) 0%,rgba(169,84,199,0.84) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2e229e', endColorstr='#d6a954c7',GradientType=1 );
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    content: "";
 }
 .container{
     width: 80%;
@@ -32,12 +50,8 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
-    
-   
 }
-.logo-area h1 span{
- color: #E63946;
-}
+
 .menu-area ul{
 
     margin: 0;
@@ -75,76 +89,171 @@ body{
     text-align: center;
 }
 .banner-text h3{
-    font-size: 25px;
+    font-size: 20px;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 60px;
+    font-weight: 400;
+    letter-spacing: .2em;
+    
 }
 .banner-text h1{
-    font-size: 40px;
-    text-transform: uppercase;
+    font-size: 120px;
     margin-bottom: 25px;
+    font-weight: 300;
+    margin-bottom: 50px;
 
 }
-.banner-text p{
-font-weight: 600;
-
-}
-
 .boxed-btn{
-    background: #E63946;
+    
     color: #fff;
     display:inline-block;
     margin-top: 30px;
     padding: 10px 40px;
-    border: none;   
+    border: 1px solid #fff;   
     border-radius: 50px;
     cursor: pointer;
     text-decoration: none;
-    font-weight: 700;
-    transition: .3s;
-}
-.boxed-btn:hover{
-    background-color:#fff;
-    color: #333;
- 
-  
-}
-#about{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
-  
+    font-weight: 400;
+    transition: all .3s ease 0s;
     
    
 }
-.about-image{
-    flex-basis: 40%;
+.boxed-btn:hover{
+    background: -moz-linear-gradient(-45deg,  rgba(46,34,158,0.93) 0%, rgba(169,84,199,0.84) 100%);
+    background: -webkit-linear-gradient(-45deg,  rgba(46,34,158,0.93) 0%,rgba(169,84,199,0.84) 100%);
+    background: linear-gradient(135deg,  rgba(46,34,158,0.93) 0%,rgba(169,84,199,0.84) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2e229e', endColorstr='#d6a954c7',GradientType=1 );
+    transition: all .3s ease 0s;
+    
+
+  
+}
+.boxed-btn .fa{
+    margin-left: 10px;
+ 
+
+}
+.reason{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+.reason-image{
+    flex-basis: 50%;
     height: auto;
-    background-image: url(../img/kasem.jpg);
+    background-image: url(../img/slider.jpg);
     background-size:cover;
     background-position: center;
     background-color: #fff;
-    border: 3px solid #ccc;
-    border-radius: 5px;
+  
+
 }
-.about-text{
-    flex-basis: 50%;
+.reason-text{
+    flex-basis: 40%;
     line-height: 1.8em;
+    align-items: center;
+
 }
-.about-text h1,h2{
+.reason-text h1{
     margin-bottom: 15px;
+    font-size:40px;
+    font-weight: 300;
+    line-height: 50px;
 }
-.about-text h1 span{
- color: #E63946;
+.reason-text h1 span{
+ font-weight: 600;
+}
+.reason-text .boxed-btn{
+    background: -moz-linear-gradient(-45deg,  rgba(46,34,158,0.93) 0%, rgba(169,84,199,0.84) 100%);
+    background: -webkit-linear-gradient(-45deg,  rgba(46,34,158,0.93) 0%,rgba(169,84,199,0.84) 100%);
+    background: linear-gradient(135deg,  rgba(46,34,158,0.93) 0%,rgba(169,84,199,0.84) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2e229e', endColorstr='#d6a954c7',GradientType=1 );
+    border:none;
+}
+.sticky-bg{
+    background-image: url(../img/parallux-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+    height: 480px;
+    
+
+}
+.sticky-reason{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.sticky-bg .reason-text{
+    color: #fff;
+    padding: 100px 0;
+    flex-basis: 40%;
+}
+.sticky-reason .boxed-btn{
+    border: 1px solid #fff;
+    background: none;
+}
+.sticky-reason .boxed-btn:hover{
+    background: -moz-linear-gradient(-45deg,  rgba(46,34,158,0.93) 0%, rgba(169,84,199,0.84) 100%);
+    background: -webkit-linear-gradient(-45deg,  rgba(46,34,158,0.93) 0%,rgba(169,84,199,0.84) 100%);
+    background: linear-gradient(135deg,  rgba(46,34,158,0.93) 0%,rgba(169,84,199,0.84) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2e229e', endColorstr='#d6a954c7',GradientType=1 );
+    border:none;
+}
+.flex-gallery{
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+}
+.gallery-image-col{
+    flex: 50%;
+    max-width: 50%;
+   
+}
+.gallery-image-1{
+    background-image: url(../img/s1.jpg);
+}
+.gallery-image-2{
+    background-image: url(../img/s2.jpg);
+}
+.gallery-image-3{
+    background-image: url(../img/s3.jpg);
+}
+.gallery-image-4{
+    background-image: url(../img/s4.jpg);
 }
 
+.gallery-property{
+    flex-basis: 50%;
+    height: 500px;
+    margin: 30px 15px;
+    border-radius: 3px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.gallery-content:hover{
+    display: inline-block;
+}
+.gallery-content{
+    color: #fff;
+    text-align: center;    
+    background: -moz-linear-gradient(-45deg,  rgba(46,34,158,0.93) 0%, rgba(169,84,199,0.84) 100%);
+    background: -webkit-linear-gradient(-45deg,  rgba(46,34,158,0.93) 0%,rgba(169,84,199,0.84) 100%);
+    background: linear-gradient(135deg,  rgba(46,34,158,0.93) 0%,rgba(169,84,199,0.84) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2e229e', endColorstr='#d6a954c7',GradientType=1 );
+    border:none; ;
+    height: 100%;
+    display: none;
+}
 .heading-box,.paragraph-box{
  border: 1px dotted #555;
  margin: 30px 0;
  text-align: justify;
  padding: 20px;
- 
-
 }
 .paragraph-box{
     margin-bottom: 30px;
@@ -315,8 +424,11 @@ font-weight: 600;
     margin-top: 20px;
 
 }
-.pdt-80{
-    padding-top: 80px;
+.pdt-100{
+    padding-top: 100px;
+}
+.pdt-120{
+    padding-top: 120px;
 }
 
 .pdt-200{
