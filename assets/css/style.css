@@ -432,10 +432,11 @@ body{
 
 }
 .main-footer{
-    background: #333;
+    background: #222222;
+    padding: 100px 0;
     color: #fff;
     text-align: center;
-    padding: 15px 0;
+  
     margin-top: 20px;
 
 }
@@ -448,6 +449,9 @@ body{
 
 .pdt-200{
     padding-top: 200px;
+}
+script{
+    display: none;
 }
 
 
