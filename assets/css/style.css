@@ -13,10 +13,10 @@ html{
 }
 
 body{
-
     font-family: 'Poppins', sans-serif;
     line-height: 1.6em;
 }
+
 .d-flex{
     display: flex;
 }
@@ -102,6 +102,7 @@ a{
         color: #E63946;
 
 }
+
 .banner-area{
     color: #fff;
 }
@@ -126,8 +127,8 @@ a{
     margin-bottom: 25px;
     font-weight: 300;
     margin-bottom: 50px;
-
 }
+
 .boxed-btn{
     
     color: #fff;
@@ -161,7 +162,7 @@ a{
 .reason{
     display: flex;
     justify-content: space-between;
-    height: 400px;
+    min-height: 400px;
 }
 .reason-image{
     flex-basis: 50%;
@@ -216,7 +217,7 @@ a{
 }
 .sticky-reason{
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
    
     
 }
@@ -293,8 +294,6 @@ a{
 .service-area .service-bg:hover .overlay-content{
     opacity: 1;
     height: 100%;
-
-
 }
 .my-form input[type="text"], .my-form textarea{
    padding: 8px;
